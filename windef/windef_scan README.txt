@@ -4,4 +4,4 @@ Editing windef_scan...
 -2 is full scan
 
 
-currently it is at -1
+currently it is at -2
