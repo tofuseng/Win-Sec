@@ -13,6 +13,14 @@ sc config wuauserv start= auto
 
 pause
 
+echo Checking Account Password details...
+net accounts /minpwlen:8
+net accounts /maxpwage:30
+net accounts /uniquepw:0
+net accounts /minpwage:10
+
+pause
+
 echo enabling default windows defender settings
 cd C:\Program Files\Windows Defender
 MpCmdRun.exe -RestoreDefaults
